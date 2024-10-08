@@ -1,0 +1,6 @@
+[book]
+title = "mutest-rs"
+authors = ["Zalán Bálint Lévai"]
+src = "src"
+language = "en"
+multilingual = false
