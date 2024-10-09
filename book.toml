@@ -1,6 +1,13 @@
 [book]
 title = "mutest-rs"
 authors = ["Zalán Bálint Lévai"]
+description = "Robust, efficient, safe, and parallel mutation testing tools for Rust. Use mutest-rs to generate and evaluate program mutations to assess your test suite."
 src = "src"
 language = "en"
 multilingual = false
+
+[output.html]
+git-repository-url = "https://github.com/zalanlevai/mutest-rs"
+edit-url-template = "https://github.com/zalanlevai/mutest-rs-www"
+smart-punctuation = true
+mathjax-support = true
