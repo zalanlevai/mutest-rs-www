@@ -4,7 +4,7 @@
 
 # User Guide
 
-- [Getting Started](getting_started.md)
+- [Getting Started](getting-started.md)
   - [Installation](installation.md)
   - [Usage](usage.md)
 
