@@ -19,10 +19,12 @@ cargo install --force --path mutest-driver
 cargo install --force --path cargo-mutest
 ```
 
-Please make note of the directory where you checked out mutest-rs. When using mutest-rs, make sure that the `MUTEST_SEARCH_PATH` environment variable is set to point to the `target/release` directory inside. This is to ensure correct linking with the runtime crate. The easiest solution is to add the following to your shell's init script (replacing `<PATH_TO_MUTEST_RS_SRC_REPO>` with a path pointing to your local mutest-rs repository):
+Please ensure that you retain the checked out copy of mutest-rs. This is to ensure correct linking with the runtime crate and related compilation artifacts.
+
+Alternatively, you may consider building `mutest-driver` with the runtime embedding option, which will compile and install a self-contained executable.
 
 ```sh
-export MUTEST_SEARCH_PATH=<PATH_TO_MUTEST_RS_SRC_REPO>/target/release
+cargo install --force --path mutest-driver --features embed-runtime
 ```
 
 Currently, the only option to install and use mutest-rs is to compile it yourself.

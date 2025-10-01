@@ -1,12 +1,10 @@
 # Usage
 
-To run mutest-rs on any Cargo package, use the `cargo mutest run` subcommand with the usual Cargo targeting options (see [Cargo Package Selection](https://doc.rust-lang.org/cargo/commands/cargo-test.html#package-selection), [Cargo Target Selection](https://doc.rust-lang.org/cargo/commands/cargo-test.html#target-selection), and [Cargo Feature Selection](https://doc.rust-lang.org/cargo/commands/cargo-test.html#feature-selection)):
+To run mutest-rs on any Cargo package or workspace, use the `cargo mutest run` subcommand with the usual Cargo targeting options (see [Cargo Package Selection](https://doc.rust-lang.org/cargo/commands/cargo-test.html#package-selection), [Cargo Target Selection](https://doc.rust-lang.org/cargo/commands/cargo-test.html#target-selection), and [Cargo Feature Selection](https://doc.rust-lang.org/cargo/commands/cargo-test.html#feature-selection)):
 
 ```sh
-cargo mutest -p example-package --lib run
+cargo mutest -p example-package run
 ```
-
-> **NOTE**: Currently, running the tool requires manually specifying the `MUTEST_SEARCH_PATH` environment variable to point to the local mutest-rs build artifacts (see [Installation](./installation.md)).
 
 ## Prerequisites
 
